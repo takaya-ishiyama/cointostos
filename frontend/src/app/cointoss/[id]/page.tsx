@@ -7,7 +7,6 @@ export default function CoinToss() {
 
   const handleClickCointoss = React.useCallback(() => {
     const randomeZeroOrOne = getRandomInt(2)
-    console.log('\n-----------------------\n', randomeZeroOrOne)
     switch (randomeZeroOrOne) {
       case 0: {
         setCoin(coinConsts.frontAndBack.front)
